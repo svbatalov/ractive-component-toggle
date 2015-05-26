@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+        <script type="text/javascript" src='bundle.js'></script>
+
+    </head>
+
+    <body>
+        <div id="container"></div>
+
+        <script type="text/ractive" id="template">
+            <div style="padding:3em">
+
+             <Toggle value="{{toggled}}" size="mini"
+               custom_style="width:58px; height: 22px;"
+               texton="active"
+               styleon='btn-danger'/>
+
+               <div style="padding-top:1em">
+                 {{#toggled}}
+                    YEAH, I'M TOGGLED
+                 {{else}}
+                    DISABLED
+                 {{/}}
+               </div>
+
+               <input type="checkbox" checked="{{toggled}}">
+            </div>
+        </script>
+
+        <script type="text/javascript">
+            var app = new Ractive({
+                el: '#container',
+                template: '#template',
+            });
+        </script>
+    </body>
+</html>

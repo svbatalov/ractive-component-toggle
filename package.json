@@ -1,0 +1,45 @@
+{
+  "name": "ractive-component-toggle",
+  "version": "0.1.0",
+  "description": "Ractive component wrapping bootstrap toggle widget: http://www.bootstraptoggle.com/",
+  "main": "bundle.js",
+  "author": "Sergey Batalov",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -g uglifyify ./index.js > bundle.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svbatalov/ractive-component-toggle.git"
+  },
+  "keywords": [
+    "ractive",
+    "component",
+    "bootstrap",
+    "toggle"
+  ],
+  "bugs": {
+    "url": "https://github.com/svbatalov/ractive-component-toggle/issues"
+  },
+  "homepage": "https://github.com/svbatalov/ractive-component-toggle",
+  "devDependencies": {
+    "brfs": "^1.4.0",
+    "browserify": "^10.2.1",
+    "browserify-shim": "^3.8.7",
+    "cssify": "^0.7.0",
+    "ractive-events-tap": "^0.2.0",
+    "uglifyify": "^3.0.1"
+  },
+  "browserify": {
+    "transform": [
+      "cssify",
+      "brfs",
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "ractive": "global:Ractive"
+  }
+}

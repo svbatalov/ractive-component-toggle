@@ -1,0 +1,12 @@
+<div class="toggle btn btn-primary
+    {{cursize}}
+    {{ value ? '' : 'off' }}
+    mystyle {{class}}"
+    style="{{curstyle}}"
+    on-tap="toggle('value')">
+    <div class="toggle-group">
+        <label class="btn {{styleon}} {{cursize}} toggle-on">{{texton}}</label>
+        <label class="btn {{styleoff}} {{cursize}} active toggle-off">{{textoff}}</label>
+        <span class="toggle-handle btn {{cursize}} {{handle}}"></span>
+    </div>
+</div>
