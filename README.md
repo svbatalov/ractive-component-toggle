@@ -10,6 +10,18 @@ Note that to use this plugin you must have
 [Ractive](http://docs.ractivejs.org/latest/get-started) (either via `<script src="...">` or
 bundled using e.g. browserify)
 and [bootstrap](http://getbootstrap.com/getting-started/) styles available.
+
+If you've made some changes to source files, please rebuild `bundle.js` with the following command
+```
+$ npm install  # installs dev-dependencies
+$ npm run build
+```
+
+If your application uses CommonJS approach (browserify) add
+```
+require('ractive-component-toggle');
+```
+to your code.
 ### Usage
 
 Please look at `demo.html` for usage example.
