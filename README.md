@@ -3,10 +3,10 @@ Ractive component wrapping bootstrap toggle widget:  http://www.bootstraptoggle.
 
 ### Installation
 ```
-$ npm instamm ractive-component-toggle
+$ npm install ractive-component-toggle
 ```
 
-Note that to use this plugin you must have
+Note that to use this component you must have
 [Ractive](http://docs.ractivejs.org/latest/get-started) (either via `<script src="...">` or
 bundled using e.g. browserify)
 and [bootstrap](http://getbootstrap.com/getting-started/) styles available.
@@ -30,7 +30,7 @@ Basically you use the `<Toggle/>` tag in your template and configure it
 using the following attributes:
 
 * `value`
-Specifies the variable containing the state of toggle.
+Specifies the variable containing the state of toggle: `value='{{toggle_var}}'`.
 * `texton` (default: 'On')
 Text displayed when toggle is on.
 * `textoff` (default: 'Off')
@@ -41,7 +41,7 @@ One of predefined sizes (the same as in original [bootstraptoggle](http://www.bo
 * `styleon` (default: 'btn-primary')
 CSS class applied to the `texton` label.
 * `styleoff` (default: 'btn-default')
-CSS class applied to the `texton` label.
+CSS class applied to the `textoff` label.
 * `handle` (default: 'btn-default')
 CSS class applied to handle.
 * `custom_style`
