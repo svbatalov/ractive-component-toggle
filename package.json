@@ -1,6 +1,6 @@
 {
   "name": "ractive-component-toggle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ractive component wrapping bootstrap toggle widget: http://www.bootstraptoggle.com/",
   "main": "bundle.js",
   "author": "Sergey Batalov",
